@@ -1,0 +1,86 @@
+/* Some CSS styling */
+body {
+    overflow: hidden;
+}
+
+#sketchpadapp {
+    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.leftside {
+    float:left;
+    width:35%;
+    height:95vh;
+    background-color:#c4ffec;
+    padding:10px;
+    border-radius:4px;
+}
+.rightside {
+    float:left;
+    margin-left:10px;
+}
+#sketchpad {
+    float:left;
+    border:2px solid #888;
+    border-radius:4px;
+    position:relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+
+
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 30%;
+}
+
+.middle {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.button {
+    background-color: white; 
+    border: 2px solid #888;
+    color: black;
+    padding: 20px;
+
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    margin: 0 auto; 
+    font-size: 16px;
+    
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.menu {
+
+    margin-top: 25%;
+}
+
+.button:hover {
+    background-color: #888;
+    color: white;
+   
+}

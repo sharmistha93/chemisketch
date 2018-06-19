@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Sketchpad</title>
+
+</head>
+
+<body onload="init()">
+    <div id="sketchpadapp">
+        <div class="leftside">
+             
+
+        </div>
+        <div class="rightside">
+            <canvas id="sketchpad" height="650" width="850">
+            </canvas>
+            <div class="row menu">
+            	<div class="column left">
+            		<input class="button" type="submit" value="CLEAR" onclick="clearCanvas(canvas,ctx);">
+            	</div>
+            	<div class="column middle">
+            		<button class="button">CHECK</button>
+            	</div>
+            	<div class="column right">
+            		<button class="button">HELP</button>
+            	</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
